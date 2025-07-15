@@ -1,0 +1,23 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 0.5 ease , transform 0.5s ease;
+}
+
+.box:hover{
+    background-color: aqua;
+    transform: scale(.85);
+}
+
+/* 
+ 
+transition : property - duration - timing-function -delay
+
+1.property => blackgrund-color /width /hight
+2.duration => 1s / 0.5s / 500s 
+3.timing-function => ease / ease-in / ease-out /linear
+
+*/
