@@ -21,3 +21,30 @@ transition : property - duration - timing-function -delay
 3.timing-function => ease / ease-in / ease-out /linear
 
 */
+
+.animation-box {
+    width: 100px;
+    height: 100px;
+    background-color:lightcoral;
+    border-radius: 8px;
+    animation: move-box 3s ease-in-out infinite;
+}
+
+@keyframes move-box {
+    0%{
+        opacity: 0;
+        transform: translateX();
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(100px);
+    }
+}
+
+/* 
+animation: name duration timing-function delay iteration-count direction fill-mode;
+ */
