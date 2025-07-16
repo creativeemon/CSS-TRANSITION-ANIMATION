@@ -48,3 +48,30 @@ transition : property - duration - timing-function -delay
 /* 
 animation: name duration timing-function delay iteration-count direction fill-mode;
  */
+
+ .combine-title{
+    margin-top: 120px;
+    margin-bottom: 50px;
+ }
+
+ .animation-box-tansition {
+    width: 150px;
+    height: 150px;
+    background-color: lightgreen;
+    cursor: pointer;
+    transform: background-color 5s ease;
+    animation: rotate-box 5s ease infinite;
+ }
+
+ .animation-box-tansition:hover{
+    background-color: aquamarine;
+ }
+ @keyframes rotate-box {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{}
+    100%{
+        transform: rotate(360deg);
+    }
+ }
